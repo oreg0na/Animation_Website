@@ -1,0 +1,71 @@
+/* &display=swap&subset=cyrillic-ext*/
+* {
+	margin: 0;
+}
+html,
+body {
+	height: 100vh;
+}
+.bg__video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+
+	color: #fff;
+
+	animation-name: show;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.container a {
+	color: #fff;
+	text-decoration: none;
+}
+.header__main {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 10rem;
+	text-transform: uppercase;
+	background: repeating-linear-gradient(
+		white,
+		white 3px,
+		transparent 3px,
+		transparent 5px
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.header__second {
+	font-family: 'Secular One', sans-serif;
+	font-size: 2rem;
+	font-weight: 500;
+}
+.container svg {
+	width: 64px;
+	height: 64px;
+	fill: #fff;
+	transition: all ease 1.5s;
+}
+.container svg:hover {
+	fill: #000;
+}
